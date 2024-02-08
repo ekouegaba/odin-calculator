@@ -9,7 +9,7 @@ let num2;
 numberBtns.forEach(element => {
     element.addEventListener("click",()=>{
         let number = element.textContent;
-        if (calcDisplay.textContent.charAt(0) === "0") {
+        if (calcDisplay.textContent.charAt(0) === "0" && !calcDisplay.textContent.includes(".")) {
             calcDisplay.textContent = "";
         }
         if(calcDisplay.textContent.length < 9){
